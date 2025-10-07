@@ -1,0 +1,63 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPL/oJ9elVbMahWXtfHrXwN",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/valeriadorado1/valeria/blob/main/programa%206\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QkfftDkiEQd7",
+        "outputId": "6f47d80e-4740-415b-ccad-1804a2621a36"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Temperaturas originales (Fahrenheit) : [80, 72, 95, 82, 79, 72, 85]\n",
+            "Temperaturas convertidas (Centigrados): [26.67, 22.22, 35.0, 27.78, 26.11, 22.22, 29.44]\n"
+          ]
+        }
+      ],
+      "source": [
+        "temperaturas_fahrenheit = [80, 72, 95, 82, 79, 72, 85]\n",
+        "\n",
+        "def fahrenheit_a_centigrados(f):\n",
+        "   centigrados = (f - 32) * 5/9\n",
+        "   return round(centigrados, 2)\n",
+        "\n",
+        "temperaturas_centigrados = [fahrenheit_a_centigrados(temp) for temp in temperaturas_fahrenheit]\n",
+        "\n",
+        "print(f\"Temperaturas originales (Fahrenheit) : {temperaturas_fahrenheit}\")\n",
+        "print(f\"Temperaturas convertidas (Centigrados): {temperaturas_centigrados}\")"
+      ]
+    }
+  ]
+}
